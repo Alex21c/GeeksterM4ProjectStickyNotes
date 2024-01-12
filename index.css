@@ -1,0 +1,89 @@
+:root {
+  --color-white: #FFFFFF;
+}
+*, ::before, ::after{
+  padding:0;
+  margin:0;
+  box-sizing:border-box;
+}
+.displayNone{
+  display:none;
+}
+html{
+  font-size:16px;
+  font-family: 'Poppins', sans-serif;
+}
+
+body{
+  background-color: lightgray;
+}
+ul{
+  /* background-color: lightgreen; */
+  width: 100vw;
+  height: 100vh;
+  padding: 1rem;
+  list-style: none;
+  display: flex;
+  gap:1rem;
+  
+  /* gap: 1rem; */
+  /* position: relative; */
+}
+
+ul>li{
+  position: relative;
+  background-color: lightblue;
+  width: fit-content;
+  height: fit-content;
+}
+ul>li>textarea{
+  padding-right: 1rem;
+  min-height: 7rem;
+  min-width: 7rem;
+  font-size: 1rem;
+  padding: .5rem;
+}
+ul>li{
+  position: relative;
+  background-color: lightblue;
+  width: fit-content;
+}
+
+ul>li>div.wrapperActionButtons{
+  position: absolute;
+  right: 0;
+  top:0;
+
+  user-select: none;
+  display: flex;
+  flex-direction: column;
+  gap:.5rem;
+
+  padding-right: .5rem;
+  padding-top:.5rem;
+  font-size: 1.5rem;
+  z-index: 100;
+}
+
+ul>li>div.wrapperActionButtons>i{
+  cursor: pointer;
+  color:lightgray;
+  transition: .3s;
+  font-weight: normal;
+}
+ul>li>div.wrapperActionButtons>i:hover{
+  color:navy;
+}
+
+ul>li>div.wrapperActionButtons>i.fa-circle-xmark:hover{
+  color:red;
+}
+
+
+.editing{
+  background-color: lightgreen;
+}
+
+ul>li>div.wrapperActionButtons>i.markPencilActive{
+ color:navy; 
+}
