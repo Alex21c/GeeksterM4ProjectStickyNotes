@@ -32,7 +32,7 @@ ul{
 
 ul>li{
   position: relative;
-  background-color: lightblue;
+  /* background-color: lightblue; */
   width: fit-content;
   height: fit-content;
 }
@@ -40,14 +40,11 @@ ul>li>textarea{
   padding-right: 1rem;
   min-height: 7rem;
   min-width: 7rem;
+  width:100%;
   font-size: 1rem;
   padding: .5rem;
 }
-ul>li{
-  position: relative;
-  background-color: lightblue;
-  width: fit-content;
-}
+
 
 ul>li>div.wrapperActionButtons{
   position: absolute;
@@ -63,16 +60,19 @@ ul>li>div.wrapperActionButtons{
   padding-top:.5rem;
   font-size: 1.5rem;
   z-index: 100;
+  /* background-color: white; */
 }
 
 ul>li>div.wrapperActionButtons>i{
   cursor: pointer;
   color:lightgray;
   transition: .3s;
-  font-weight: normal;
+  
+
 }
 ul>li>div.wrapperActionButtons>i:hover{
   color:navy;
+  font-size: 2rem;
 }
 
 ul>li>div.wrapperActionButtons>i.fa-circle-xmark:hover{
@@ -86,4 +86,9 @@ ul>li>div.wrapperActionButtons>i.fa-circle-xmark:hover{
 
 ul>li>div.wrapperActionButtons>i.markPencilActive{
  color:navy; 
+}
+
+h2{
+  font-size: 1rem;
+  padding-right:2rem;
 }

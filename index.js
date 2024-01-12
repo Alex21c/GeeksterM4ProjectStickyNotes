@@ -7,13 +7,24 @@ let xMarks = document.querySelectorAll('.fa-circle-xmark');
 function controller(event){
   console.log(event);
   if(event.target.nodeName === 'LI'){
-    moveNote(event);
+    view(event, 'moveStickyNote');
   }else if(event.target.nodeName === 'I' && event.target.classList.contains('fa-pencil')){
-    allowEdit(event);
-    
+    view(event, 'editTextContentOfStickyNote');        
   }else if(event.target.nodeName === 'I' && event.target.classList.contains('fa-circle-xmark')){
     console.log('X clicked');
   }
+}
+
+function view(event, operation){
+  if(operation === 'moveStickyNote'){
+    moveNote(event);
+  }else if(operation === 'editTextContentOfStickyNote'){
+    allowEdit(event);
+  }
+}
+
+function model(){
+
 }
 
 function moveNote(event){
