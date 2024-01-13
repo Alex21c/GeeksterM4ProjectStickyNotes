@@ -3,21 +3,6 @@ let model = new Model();
 let view = new View();
 let controller = new Controller(view, model);
 
-///
-  // let textAreas = document.querySelectorAll('textarea');
-  
-  // textAreas.forEach((textarea)=>textarea.addEventListener('mouseup', (event)=>textAreaResized(event)));
-  // function textAreaResized(event){
-  //   let h2 = event.target.parentNode.childNodes[1];
-  //   let wrapperActionButtons= event.target.parentNode.childNodes[5];
-  //   h2.style.width=`${event.target.clientWidth}px`;
-  //   wrapperActionButtons.style.top=`${h2.clientHeight}px`;
-  //   // console.log('textAreaResized', event);
-  // }
-///
-
-
-
 function attachEventListeners(){
 
   let ul = document.querySelector('#list');
