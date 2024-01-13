@@ -20,8 +20,16 @@
 </head>
 <body>
   <h1 class="displayNone">Project Sticky Notes</h1>
+  <form id="containerTakeANewNote" action="#">
+    <div class="wrapperInputTitleAndColorPicker">
+      <input type="text" placeholder="Title" required id="newNoteTitle">
+      <input type="color" value="#90ee90" id="newNoteColorSelectedByUser">
+    </div>
+    <textarea spellcheck="false" placeholder="Take a note..." required id="newNoteDescription"></textarea>
+    <button id="addNewNote">Add Note</button>
+  </form>
   <ul id="list">
-    <li draggable="true">
+    <!-- <li draggable="true">
       <h2>Investment Log</h2>
       <textarea spellcheck="false" readonly>NiftyBees</textarea>
       <div class="wrapperActionButtons">        
@@ -30,7 +38,7 @@
         <i class="fa-duotone fa-pencil"></i>        
       </div>
     </li>
-    
+  
     <li draggable="true">
       <h2>Financial Freedom Plan</h2>
       <textarea spellcheck="false" readonly>Generate ₹1 Lakh/month passive income from Stock Market and Real Estate.</textarea>
@@ -41,17 +49,24 @@
       </div>
     </li>
     <li draggable="true">
-      <textarea spellcheck="false" readonly>Passive Sources of Income:</textarea>
+      <h2>Passive Sources of Income:</h2>
+      <textarea spellcheck="false" readonly>
+1. Stock Market
+2. Rental Real Estate
+      </textarea>
       <div class="wrapperActionButtons">
         <i class="fa-duotone fa-circle-xmark"></i>
         <i class="fa-solid fa-arrows-up-down-left-right"></i>        
         <i class="fa-duotone fa-pencil"></i>
       </div>
-    </li>
+    </li> -->
 
    
 
   </ul>
+  <script src="Model.js"> </script>
+  <script src="View.js"> </script>
+  <script src="Controller.js"> </script>
   <script src="index.js"> </script>
 
 </body>

@@ -6,4 +6,4 @@
 # Author
 [Abhishek kumar](https://www.linkedin.com/in/alex21c/), ([Geekster](https://geekster.in/) MERN Stack FS-14 Batch)
 # Hosted Version of the Project:
-[Geekster M4 Assignment&mdash;Dark Mode](https://alex21c.github.io/GeeksterM4GeneratingTheKeyboardCode/)
+[Geekster M4 Assignment&mdash;Sticky Notes Project](https://alex21c.github.io/GeeksterM4GeneratingTheKeyboardCode/)

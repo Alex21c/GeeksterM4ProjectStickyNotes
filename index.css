@@ -37,13 +37,15 @@ ul>li{
   height: fit-content;
 }
 ul>li>textarea{
-  padding-right: 1rem;
-  min-height: 7rem;
-  min-width: 7rem;
+  min-height: 9rem;
+  min-width: 10rem;
   width:100%;
   font-size: 1rem;
   padding: .5rem;
+  padding-right: 3rem;
+  color:black;
 }
+
 
 
 ul>li>div.wrapperActionButtons{
@@ -65,14 +67,15 @@ ul>li>div.wrapperActionButtons{
 
 ul>li>div.wrapperActionButtons>i{
   cursor: pointer;
-  color:lightgray;
+  color:rgba(97, 97, 165, 0.884);
   transition: .3s;
+  font-size: 1.8rem;
   
 
 }
 ul>li>div.wrapperActionButtons>i:hover{
   color:navy;
-  font-size: 2rem;
+  /* font-size: 2rem; */
 }
 
 ul>li>div.wrapperActionButtons>i.fa-circle-xmark:hover{
@@ -80,8 +83,8 @@ ul>li>div.wrapperActionButtons>i.fa-circle-xmark:hover{
 }
 
 
-.editing{
-  background-color: lightgreen;
+textarea.editing{
+  background-color: white !important;
 }
 
 ul>li>div.wrapperActionButtons>i.markPencilActive{
@@ -92,3 +95,46 @@ h2{
   font-size: 1rem;
   padding-right:2rem;
 }
+
+form#containerTakeANewNote{
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  border: 1px solid lightgray;
+  box-shadow:  1px 1px 8px 1px #9d9d9d;
+  margin-top:1rem;
+  margin-left:1rem;
+  border-radius: .5rem;
+  max-width: 20rem;
+  gap: .5rem;
+  padding: 1rem;  
+}
+form#containerTakeANewNote textarea{
+  height: 10rem;
+  padding: .5rem;
+  font-size: 1rem;
+  background-color: #90ee90;
+}
+
+form#containerTakeANewNote textarea::placeholder{
+  color:black;
+  font-style:italic;
+}
+form#containerTakeANewNote button{
+  padding: .5rem;
+}
+form#containerTakeANewNote div.wrapperInputTitleAndColorPicker{
+  display: flex;
+  justify-content: space-between;
+  gap: .5rem;
+  align-items: center;
+}
+
+form#containerTakeANewNote div.wrapperInputTitleAndColorPicker>input[type=text]{
+  width: 100%;
+  padding:.5rem;
+  font-weight: 500;
+  font-size: 1.2rem;
+}
+
+
